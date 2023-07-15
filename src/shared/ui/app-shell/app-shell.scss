@@ -1,0 +1,20 @@
+.app-shell {
+  display: grid;
+  grid-template-areas:
+    'topSlot topSlot'
+    'leftSlot main';
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+
+  &__top-slot {
+    grid-area: topSlot;
+  }
+
+  &__left-slot {
+    grid-area: leftSlot;
+  }
+
+  &__main {
+    grid-area: main;
+  }
+}
