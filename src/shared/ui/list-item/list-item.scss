@@ -1,0 +1,15 @@
+.list-item {
+  padding: 16px 24px;
+  cursor: pointer;
+  border-bottom: 2px solid #ebebea;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    background: rgb(241, 240, 240);
+  }
+
+  &--selected {
+    background: #e1e1df;
+  }
+}
