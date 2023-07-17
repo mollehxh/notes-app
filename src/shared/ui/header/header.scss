@@ -1,0 +1,9 @@
+.header {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #e3e3e3 0%, #d1d1d1 100%);
+  border-bottom: 1px solid #acacac;
+  position: relative;
+  z-index: 1000;
+}

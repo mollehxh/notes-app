@@ -1,0 +1,30 @@
+.sidebar {
+  width: 300px;
+  border-right: 1px solid #dadada;
+  height: 100%;
+
+  &__button {
+    display: none;
+    position: absolute;
+    right: -46px;
+    top: calc(51px + 12px);
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 51px;
+    background: #fafaf8;
+    position: fixed;
+    top: 0;
+
+    left: -300px;
+    transition: left 0.3s ease;
+
+    &__button {
+      display: inline-block;
+    }
+
+    &--open {
+      left: 0;
+    }
+  }
+}
