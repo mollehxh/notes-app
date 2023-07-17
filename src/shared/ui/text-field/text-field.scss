@@ -1,0 +1,29 @@
+.text-field-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-field-icon {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  left: 8px;
+  color: #3d3d3d;
+}
+
+.text-field {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px rgba(0, 0, 0, 0.05) solid;
+  background: #fff;
+  color: #3d3d3d;
+
+  &--has-icon {
+    padding-left: 32px;
+  }
+
+  &:focus {
+    outline: #94ade4 solid 2px;
+  }
+}
