@@ -5,6 +5,7 @@
     'leftSlot main';
   grid-template-rows: auto 1fr;
   grid-template-columns: auto 1fr;
+  height: 100vh;
 
   &__top-slot {
     grid-area: topSlot;

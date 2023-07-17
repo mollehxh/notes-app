@@ -3,8 +3,13 @@
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   border: 0.25px rgba(0, 0, 0, 0.12) solid;
-  color: #3d3d3d;
+  color: #646464;
   background: white;
   text-decoration: none;
   cursor: pointer;
+
+  &--disabled {
+    color: #bebebe;
+    cursor: default;
+  }
 }

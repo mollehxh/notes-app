@@ -6,7 +6,17 @@ type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 export const ButtonBase = (props: ButtonBaseProps) => {
-  const { className, ...others } = props;
+  const { className, disabled, ...others } = props;
 
-  return <button className={clsx(['button-base', className])} {...others} />;
+  return (
+    <button
+      className={clsx([
+        'button-base',
+        { 'button-base--disabled': disabled },
+        className,
+      ])}
+      disabled={disabled}
+      {...others}
+    />
+  );
 };
